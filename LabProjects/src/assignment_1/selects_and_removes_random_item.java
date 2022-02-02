@@ -1,7 +1,5 @@
 package assignment_1;
-
 import java.util.Random;
-
 public class selects_and_removes_random_item {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
