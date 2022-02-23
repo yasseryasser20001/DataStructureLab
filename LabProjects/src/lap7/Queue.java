@@ -1,4 +1,4 @@
-package self_study;
+package lap7;
 
 public interface Queue<E> {
     boolean isEmpty();
