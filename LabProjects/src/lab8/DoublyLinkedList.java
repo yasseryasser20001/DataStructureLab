@@ -47,11 +47,11 @@ public class DoublyLinkedList<E> {
         return x.getElement();
     }
 
-    private  E removeFirst(){
+    public   E removeFirst(){
         if (isEmpty())return null;
         return remove(header.getNext());
     }
-    private  E removeLast(){
+    public   E removeLast(){
         if (isEmpty())return null;
         return remove(trailer.getPrev());
     }

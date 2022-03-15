@@ -23,14 +23,14 @@ public class SinglyLinkedList<E> {
         if (isEmpty())return null;
         return tail.getElement();
     }
-    public void addFirst(E ex){
-        head= new Node<E>(ex,head);
+    public void addFirst(E el){
+        head= new Node<E>(el,head);
         if (size==0)
             tail=head;
             size++;
     }
-    public void addlast(E ex){
-        Node<E> newest = new Node<E>(ex , null);
+    public void addlast(E el){
+        Node<E> newest = new Node<E>(el , null);
         if (size==0)
             head=newest;
         else

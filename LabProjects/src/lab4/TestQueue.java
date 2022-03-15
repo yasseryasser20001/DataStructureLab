@@ -12,7 +12,9 @@ public class TestQueue {
         }
         for (int i = 0; i <5 ; i++) {
             System.out.print(q.de_queue()+ "\t");
+
         }
 
+        System.out.println("size= "+ q.size());
     }
 }
