@@ -10,8 +10,8 @@ public class testSinglyLinkedList {
         int choice = -1;
         System.out.println("1 add first");
         System.out.println("2 add last");
-        System.out.println("3 add remove first");
-        System.out.println("4 add remove all");
+        System.out.println("3  remove first");
+        System.out.println("4  remove all");
         System.out.println("0 add exit");
         while (choice!=0){
             System.out.println("what is your choice");

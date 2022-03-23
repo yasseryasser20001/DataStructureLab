@@ -19,7 +19,7 @@ public class ExamArrayQueue<E> implements ExamQueue<E> {
 
     @Override
     public boolean isEmpty() {
-        return f==0;
+        return sz==0;
     }
 
     @Override

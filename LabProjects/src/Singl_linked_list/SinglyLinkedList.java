@@ -6,9 +6,6 @@ public class SinglyLinkedList<E> {
     private Node<E> tail = null;
     private  int size=0;
 
-    public SinglyLinkedList() {
-    }
-
     public int size(){
         return size;
     }
@@ -23,14 +20,14 @@ public class SinglyLinkedList<E> {
         if (isEmpty())return null;
         return tail.getElement();
     }
-    public void addFirst(E ex){
-        head= new Node<E>(ex,head);
+    public void addFirst(E element){
+        head= new Node<E>(element,head);
         if (size==0)
             tail=head;
             size++;
     }
-    public void addlast(E ex){
-        Node<E> newest = new Node<E>(ex , null);
+    public void addlast(E element){
+        Node<E> newest = new Node<E>(element , null);
         if (size==0)
             head=newest;
         else

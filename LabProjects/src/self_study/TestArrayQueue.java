@@ -4,16 +4,17 @@ import lab4.ArrayQueue;
 
 public class TestArrayQueue {
     public static void main(String[] args) {
-        ArrayQueue<Integer> queue = new ArrayQueue<Integer>();
-        queue.en_queue(10);
-        queue.en_queue(13);
-        queue.en_queue(15);
-        queue.en_queue(17);
+        ArrayQueue<Integer> myqueue = new ArrayQueue<Integer>(5);
+        for (int i = 0; i <5 ; i++) {
+            myqueue.en_queue(i+1);
+        }
+        System.out.println("The size = " + myqueue.size() +" The first is = " +myqueue.first());
+        for (int i = 0; i <5 ; i++) {
+            System.out.println(  myqueue.de_queue());
+        }
+        System.out.println("The size = " + myqueue.size() +" The first is = " +myqueue.first());
 
-            System.out.println(queue.de_queue());
-        System.out.println(queue.de_queue());
-        System.out.println(queue.de_queue());
-        System.out.println(queue.de_queue());
-        System.out.println(queue.de_queue());    System.out.println(queue.de_queue());    System.out.println(queue.de_queue());    System.out.println(queue.de_queue());    System.out.println(queue.de_queue());    System.out.println(queue.de_queue());    System.out.println(queue.de_queue());    System.out.println(queue.de_queue());    System.out.println(queue.de_queue());    System.out.println(queue.de_queue());
+
+
     }
 }
